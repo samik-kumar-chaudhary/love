@@ -82,7 +82,6 @@ body {
     z-index: 1;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
     .love-message {
         font-size: 3rem;

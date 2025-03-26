@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Create floating hearts
     const container = document.querySelector('.floating-hearts');
     const colors = ['#ff6b6b', '#ff8e8e', '#ffb3b3', '#ffd8d8', '#ff9e9e'];
     
@@ -8,14 +7,12 @@ document.addEventListener('DOMContentLoaded', function() {
         heart.innerHTML = '❤️';
         heart.classList.add('heart');
         
-        // Random properties
         const size = Math.random() * 30 + 10;
         const duration = Math.random() * 3 + 3;
         const posX = Math.random() * window.innerWidth;
         const delay = Math.random() * 5;
         const color = colors[Math.floor(Math.random() * colors.length)];
         
-        // Apply styles
         heart.style.left = `${posX}px`;
         heart.style.fontSize = `${size}px`;
         heart.style.animationDuration = `${duration}s`;
@@ -24,21 +21,17 @@ document.addEventListener('DOMContentLoaded', function() {
         
         container.appendChild(heart);
         
-        // Remove heart after animation completes
         setTimeout(() => {
             heart.remove();
         }, duration * 1000);
     }
     
-    // Create initial hearts
     for (let i = 0; i < 20; i++) {
         createHeart();
     }
     
-    // Create new hearts periodically
     setInterval(createHeart, 300);
     
-    // Create click hearts
     document.addEventListener('click', function(e) {
         const clickHeart = document.createElement('div');
         clickHeart.innerHTML = '❤️';
