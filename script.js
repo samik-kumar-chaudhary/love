@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
     const container = document.querySelector('.floating-hearts');
     const colors = ['#ff6b6b', '#ff8e8e', '#ffb3b3', '#ffd8d8', '#ff9e9e'];
     
@@ -48,4 +48,4 @@ document.addEventListener('DOMContentLoaded', function() {
             clickHeart.remove();
         }, 4000);
     });
-});
+}); */
